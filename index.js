@@ -10,10 +10,10 @@ function sumArr(arr) {
   return sum;
 }
 
-console.log(sumArr([1, 2, 3, 4, 5, 6]));
-console.log(sumArr([1, 2, 3]));
-console.log(sumArr([10, 10, 10, 10, 10]));
-console.log(sumArr([]));
+// console.log(sumArr([1, 2, 3, 4, 5, 6]));
+// console.log(sumArr([1, 2, 3]));
+// console.log(sumArr([10, 10, 10, 10, 10]));
+// console.log(sumArr([]));
 
 // 2. Reverse All Array
 
@@ -42,10 +42,10 @@ function reverseArray(arr) {
   return newArray;
 }
 
-console.log(reverseArray([123, 456]));
-console.log(reverseArray([332, 432, 661]));
-console.log(reverseArray([456789, 332]));
-console.log(reverseArray([]));
+// console.log(reverseArray([123, 456]));
+// console.log(reverseArray([332, 432, 661]));
+// console.log(reverseArray([456789, 332]));
+// console.log(reverseArray([]));
 
 // 3. Unique Array
 
@@ -63,8 +63,15 @@ function uniqueArray(arr) {
     if (!isUnique) newArray[newArray.length] = arr[i];
   }
   return newArray;
+  // for (let i = 0; i < arr.length; i++) {
+  //   let unique = arr[i];
+  //   if (!newArray[unique]) newArray[newArray.length] = arr[i];
+  // }
+  // console.log(newArray);
 }
 
+// uniqueArray([1, 1, 1, 1, 1, 1]);
+// uniqueArray([1, 4, 5, 6, 1, 1, 2, 2, 3, 4, 5, 6, 7]);
 console.log(uniqueArray([1, 4, 5, 6, 1, 1, 2, 2, 3, 4, 5, 6, 7]));
 console.log(uniqueArray([1, 1, 1, 1, 1, 1]));
 console.log(uniqueArray([1, 1, 2, 2, 3, 3, 4, 4]));
@@ -99,4 +106,4 @@ function jajanBoba(uangJajan) {
   return uangJajan;
 }
 
-jajanBoba(100000);
+// jajanBoba(100000);
